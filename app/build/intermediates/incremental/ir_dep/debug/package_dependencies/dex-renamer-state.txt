@@ -1,0 +1,4 @@
+#Sun Feb 17 16:48:16 PST 2019
+base.0=C\:\\Users\\Sergio\\AndroidStudioProjects\\Rectanglee\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex

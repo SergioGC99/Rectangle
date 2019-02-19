@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/azul">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAncho"
+        style="@style/label"
+        android:layout_alignParentTop="true"
+        android:text="@string/ancho" />
+    <TextView
+        android:id="@+id/tvAlto"
+        style="@style/label"
+        android:text="@string/alto"
+        android:layout_below="@id/ediAncho" />
+
+    <EditText
+        android:id="@+id/ediAncho"
+        style="@style/textBox"
+        android:layout_below="@id/tvAncho" />
+
+    <EditText
+        android:id="@+id/ediAlto"
+        style="@style/textBox"
+        android:layout_below="@id/tvAlto" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        style="@style/label"
+        android:text="@string/area"
+        android:layout_below="@id/ediAlto" />
+
+    <EditText
+        android:id="@+id/ediArea"
+        style="@style/textBox"
+        android:layout_below="@id/tvArea" />
+
+    <TextView
+        android:id="@+id/tvPerimetro"
+        style="@style/label"
+        android:text="@string/perimetro"
+        android:layout_below="@id/ediArea" />
+
+    <EditText
+        android:id="@+id/ediPerimetro"
+        style="@style/textBox"
+        android:layout_below="@id/tvPerimetro" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        style="style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/calcular" />
+</RelativeLayout>
